@@ -19,4 +19,13 @@ radio.onReceivedNumber(function (receivedNumber) {
         maqueen.motorStop(maqueen.Motors.All)
     }
 })
+basic.showLeds(`
+    . # # # .
+    . . . # .
+    . . # . .
+    . . # . .
+    . . # . .
+    `)
+maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
 radio.setGroup(1)
